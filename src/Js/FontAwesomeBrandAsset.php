@@ -23,7 +23,7 @@ final class FontAwesomeBrandAsset extends AssetBundle
         $this->css = YII_ENV === 'prod'
             ? ['/js/fontawesome.min.js', '/js/brands.min.js'] : ['/js/fontawesome.js', '/js/brands.js'];
 
-        $this->publishOptions['only'] =  YII_ENV === 'prod'
+        $this->publishOptions['only'] = YII_ENV === 'prod'
             ? array_merge($this->css, ['/webfonts/fa-brands*']) : array_merge($this->css, ['/webfonts/fa-brands*']);
     }
 }
