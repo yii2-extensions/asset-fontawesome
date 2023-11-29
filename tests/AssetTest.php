@@ -165,12 +165,7 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
-        $this->assertStringContainsString(
-            <<<HTML
-            <link href="/css/all.css" rel="stylesheet">
-            HTML,
-            $result,
-        );
+        $this->assertStringContainsString('/css/all.css', $result);
     }
 
     public function testCssFontAwesomeBrandAssetSimpleDependency(): void
@@ -197,13 +192,8 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
-        $this->assertStringContainsString(
-            <<<HTML
-            <link href="/css/fontawesome.css" rel="stylesheet">
-            <link href="/css/brands.css" rel="stylesheet">
-            HTML,
-            $result,
-        );
+        $this->assertStringContainsString('/css/fontawesome.css', $result);
+        $this->assertStringContainsString('/css/brands.css', $result);
     }
 
     public function testCssFontAwesomeRegularAssetSimpleDependency(): void
@@ -230,13 +220,8 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
-        $this->assertStringContainsString(
-            <<<HTML
-            <link href="/css/fontawesome.css" rel="stylesheet">
-            <link href="/css/regular.css" rel="stylesheet">
-            HTML,
-            $result,
-        );
+        $this->assertStringContainsString('/css/fontawesome.css', $result);
+        $this->assertStringContainsString('/css/regular.css', $result);
     }
 
     public function testCssFontAwesomeSolidAssetSimpleDependency(): void
@@ -263,13 +248,8 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
-        $this->assertStringContainsString(
-            <<<HTML
-            <link href="/css/fontawesome.css" rel="stylesheet">
-            <link href="/css/solid.css" rel="stylesheet">
-            HTML,
-            $result,
-        );
+        $this->assertStringContainsString('/css/fontawesome.css', $result);
+        $this->assertStringContainsString('/css/solid.css', $result);
     }
 
     public function testJsFontAwesomeAssetSimpleDependency(): void
@@ -296,12 +276,7 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
-        $this->assertStringContainsString(
-            <<<HTML
-            <link href="/js/all.js" rel="stylesheet">
-            HTML,
-            $result,
-        );
+        $this->assertStringContainsString('/js/all.js', $result);
     }
 
     public function testJsFontAwesomeBrandAssetSimpleDependency(): void
@@ -328,13 +303,8 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
-        $this->assertStringContainsString(
-            <<<HTML
-            <link href="/js/fontawesome.js" rel="stylesheet">
-            <link href="/js/brands.js" rel="stylesheet">
-            HTML,
-            $result,
-        );
+        $this->assertStringContainsString('/js/fontawesome.js', $result);
+        $this->assertStringContainsString('/js/brands.js', $result);
     }
 
     public function testJsFontAwesomeRegularAssetSimpleDependency(): void
@@ -361,13 +331,8 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
-        $this->assertStringContainsString(
-            <<<HTML
-            <link href="/js/fontawesome.js" rel="stylesheet">
-            <link href="/js/regular.js" rel="stylesheet">
-            HTML,
-            $result,
-        );
+        $this->assertStringContainsString('/js/fontawesome.js', $result);
+        $this->assertStringContainsString('/js/regular.js', $result);
     }
 
     public function testJsFontAwesomeSolidAssetSimpleDependency(): void
@@ -394,10 +359,7 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
-        $this->assertStringContainsString(
-            <<<HTML
-            HTML,
-            $result,
-        );
+        $this->assertStringContainsString('/js/fontawesome.js', $result);
+        $this->assertStringContainsString('/js/solid.js', $result);
     }
 }

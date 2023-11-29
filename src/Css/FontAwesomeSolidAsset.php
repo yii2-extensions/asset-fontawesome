@@ -19,7 +19,7 @@ final class FontAwesomeSolidAsset extends AssetBundle
     public function __construct()
     {
         $this->css = YII_ENV === 'prod'
-            ? ['/css/fontawesome.min.css', '/css/solid.min.css'] : ['/css/fontawesome.css', '/css/solid.css'];
+            ? ['css/fontawesome.min.css', 'css/solid.min.css'] : ['css/fontawesome.css', 'css/solid.css'];
 
         $this->publishOptions['only'] = YII_ENV === 'prod'
             ? array_merge($this->css, ['/webfonts/fa-solid*']) : array_merge($this->css, ['/webfonts/fa-solid*']);
