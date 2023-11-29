@@ -1,5 +1,5 @@
 {
-    "name": "yii2-extensions/fontawesome",
+    "name": "yii2-extensions/asset-fontawesome",
     "type": "library",
     "description": "Asset bundle for FontAwesome.",
     "keywords": [

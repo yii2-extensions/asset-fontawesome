@@ -2,7 +2,7 @@
     <a href="https://github.com/yii2-extensions/fontawesome" target="_blank">
         <img src="https://www.yiiframework.com/image/yii_logo_light.svg" height="100px;">
     </a>
-    <h1 align="center">FontAwesome</h1>
+    <h1 align="center">Asset bundle for FontAwesome.</h1>
     <br>
 </p>
 
@@ -31,13 +31,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-composer require --dev --prefer-dist yii2-extensions/fontawesome
+composer require --dev --prefer-dist yii2-extensions/asset-fontawesome
 ```
 
 or add
 
 ```
-"yii2-extensions/fontawesome": "dev-main"
+"yii2-extensions/asset-fontawesome": "dev-main"
 ```
 
 to the require-dev section of your `composer.json` file.
