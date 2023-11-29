@@ -19,7 +19,7 @@ final class FontAwesomeRegularAsset extends AssetBundle
     public function __construct()
     {
         $this->css = YII_ENV === 'prod'
-            ? ['/js/fontawesome.min.js', '/js/regular.min.js'] : ['/js/fontawesome.js', '/js/regular.js'];
+            ? ['js/fontawesome.min.js', 'js/regular.min.js'] : ['js/fontawesome.js', 'js/regular.js'];
 
         $this->publishOptions['only'] = YII_ENV === 'prod'
             ? array_merge($this->css, ['/webfonts/fa-regular*']) : array_merge($this->css, ['/webfonts/fa-regular*']);

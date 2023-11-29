@@ -20,7 +20,7 @@ final class FontAwesomeAsset extends AssetBundle
 
     public function init(): void
     {
-        $this->css = YII_ENV === 'prod' ? ['/js/all.min.js'] : ['/js/all.js'];
+        $this->css = YII_ENV === 'prod' ? ['js/all.min.js'] : ['js/all.js'];
 
         $this->publishOptions['only'] = YII_ENV === 'prod'
             ? array_merge($this->css, ['/webfonts/*']) : array_merge($this->css, ['/webfonts/*']);
